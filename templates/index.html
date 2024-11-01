@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Python Site</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Python Site</h1>
+        <p>This is a simple one-page website built with Flask and Bootstrap 3.</p>
+        <form action="{{ url_for('add_nick') }}" method="POST">
+            <div class="form-group">
+                <label for="nick">Telegram Nickname:</label>
+                <input type="text" class="form-control" id="nick" name="nick" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <h2>Telegram Nicknames:</h2>
+        <ul>
+            {% for nick in nicks %}
+                <li>{{ nick.nick }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
