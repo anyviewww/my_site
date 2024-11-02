@@ -1,7 +1,6 @@
  # My Python Site
 
-This is a simple one-page website built with Flask, Bootstrap 3, Docker Compose, and Nginx. Users can submit their Telegram nicknames, which are stored in an SQLite database. The application also logs events in JSON format.
-
+This is a simple one-page website 
 ## Prerequisites
 
 - Docker
