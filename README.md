@@ -12,7 +12,7 @@ This is a simple one-page website
 
     ```bash
     git clone <URL вашего репозитория>
-    cd my_python_site
+    cd my_site
     ```
 
 2. Build and run the Docker containers:
