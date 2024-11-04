@@ -11,7 +11,7 @@ This is a simple one-page website
 1. Clone the repository:
 
     ```bash
-    git clone <URL вашего репозитория>
+    git clone https://github.com/anyviewww/my_site.git
     cd my_site
     ```
 
